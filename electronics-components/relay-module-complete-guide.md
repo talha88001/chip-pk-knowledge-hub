@@ -17,6 +17,9 @@ image: "../images/relay-module/relay-module-complete-guide-hero.webp"
 ---
 
 # Relay Module Complete Guide: Working, Types, Wiring & Applications
+![Hero Banner](../images/electronics-components/relay-module/Hero%20Banner.png)
+
+A relay module is an electrically operated switching device that enables Arduino, ESP32, Raspberry Pi, and other microcontrollers to safely control AC and DC loads.
 
 > A complete beginner-to-professional guide explaining relay modules, their working principle, wiring, applications, and how to use them safely with Arduino, ESP32, Raspberry Pi, and other embedded systems.
 
@@ -91,7 +94,8 @@ Typical uses include:
 
 ---
 
-# How Does a Relay Module Work?
+# How Does a Relay Module Work?.
+![How a Relay Module Works](../images/electronics-components/relay-module/How%20a%20Relay%20Module%20Works.png)
 
 When a control signal is applied to the relay input, the relay coil generates a magnetic field that moves an internal switch.
 
@@ -106,7 +110,7 @@ This isolates the controller from the high-voltage circuit while allowing safe s
 ---
 
 # Relay Module Types
-
+![Relay Types Comparison](../images/electronics-components/relay-module/Relay%20module%20types%20comparison%20chart.png)
 Different relay modules are available depending on the number of devices you want to control.
 
 - 1 Channel Relay Module
@@ -119,6 +123,7 @@ Choose the channel count based on your project requirements.
 ---
 
 # Relay Module Pinout
+![Relay Module Pinout](../images/electronics-components/relay-module/Relay%20module%20pinout%20diagram%20breakdown.png)
 
 Most relay modules include:
 
@@ -139,6 +144,7 @@ Always verify whether your module is a High-Level Trigger or Low-Level Trigger m
 ---
 
 # Relay Module Wiring
+![Relay Wiring](../images/electronics-components/relay-module/Relay%20module%20control%20for%20AC%20light.png)
 
 A relay module can be connected with:
 
@@ -161,6 +167,7 @@ The external load is connected through the COM, NO, and NC terminals.
 ---
 
 # Applications
+![Relay Module Applications](../images/electronics-components/relay-module/Relay%20module%20applications%20infographic%20design.png)
 
 Relay modules are commonly used for:
 
