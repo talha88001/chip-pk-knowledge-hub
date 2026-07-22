@@ -1,56 +1,46 @@
 # HC-SR04 Ultrasonic Distance Sensor with Arduino & ESP32 – Complete Guide
 
-The **HC-SR04 Ultrasonic Distance Sensor** is one of the most popular distance-measuring sensors used in Arduino, ESP32, robotics, and IoT projects. It measures the distance between the sensor and an object using ultrasonic sound waves, making it ideal for obstacle avoidance robots, parking systems, automatic dustbins, water-level monitoring, and smart automation.
+The **HC-SR04 Ultrasonic Distance Sensor** is one of the most widely used distance-measuring modules for **Arduino**, **ESP32**, robotics, and IoT projects. It uses ultrasonic sound waves to accurately measure the distance between the sensor and an object, making it ideal for obstacle avoidance robots, parking systems, water-level monitoring, smart dustbins, and automation projects.
 
 ---
 
 # Hero Banner
 
-![HC-SR04 Hero Banner](../images/electronics-components/hc-sr04/Hero%20Banner.png)
+![Hero Banner](../images/electronics-components/hc-sr04/Hero%20Banner.png)
 
 ---
 
-# What You'll Learn
-
-- HC-SR04 Overview
-- Technical Specifications
-- Pinout
-- Working Principle
-- Arduino Wiring
-- ESP32 Wiring
-- Sample Arduino Code
-- Real Applications
-- Common Problems
-- Recommended Products
-
----
-
-# HC-SR04 Overview
-
-![Front View](../images/electronics-components/hc-sr04/HC-SR04%20Front%20View.png)
-
-The HC-SR04 uses ultrasonic waves at approximately **40kHz** to calculate the distance between the sensor and an object.
-
-Typical specifications include:
+# Features
 
 - Measuring Range: 2cm – 400cm
 - Operating Voltage: 5V
-- Measuring Angle: 15°
+- Operating Frequency: 40kHz
 - Accuracy: ±3mm
-- Frequency: 40kHz
+- Easy Arduino & ESP32 Interface
+- Low Cost & Beginner Friendly
 
 ---
 
-# HC-SR04 Pinout
+# HC-SR04 Front View
 
-![Pinout](../images/electronics-components/hc-sr04/HC-SR04%20Pinout%20Diagram.png)
+![HC-SR04 Front View](../images/electronics-components/hc-sr04/HC-SR04%20Front%20View.png)
 
-Pins:
+The HC-SR04 has four pins:
 
 - VCC
 - TRIG
 - ECHO
 - GND
+
+It measures distance by transmitting ultrasonic pulses and calculating the time required for the echo to return.
+
+---
+
+# Pinout Diagram
+
+![Pinout](../images/electronics-components/hc-sr04/HC-SR04%20Pinout%20Diagram.png)
+
+The **TRIG** pin sends the ultrasonic pulse, while the **ECHO** pin receives the reflected signal. The measured time is converted into distance.
 
 ---
 
@@ -58,17 +48,13 @@ Pins:
 
 ![Working Principle](../images/electronics-components/hc-sr04/How%20HC-SR04%20Works%20%28Working%20Principle%29.png)
 
-The controller sends a 10µs trigger pulse.
-
-The HC-SR04 transmits an ultrasonic burst, waits for the reflected echo, and calculates the distance based on the time taken for the signal to return.
+The controller sends a 10µs trigger pulse. The HC-SR04 emits a 40kHz ultrasonic wave and waits for the reflected echo. The travel time is then used to calculate the distance.
 
 ---
 
 # Arduino Wiring
 
 ![Arduino Wiring](../images/electronics-components/hc-sr04/HC-SR04%20Arduino%20Wiring%20Diagram.png)
-
-Typical connections:
 
 | HC-SR04 | Arduino Uno |
 |----------|-------------|
@@ -83,7 +69,7 @@ Typical connections:
 
 ![ESP32 Wiring](../images/electronics-components/hc-sr04/HC-SR04%20ESP32%20Wiring%20Diagram.png)
 
-When using an ESP32, reduce the HC-SR04 ECHO signal to 3.3V using a voltage divider before connecting it to a GPIO pin.
+When connecting the HC-SR04 to an **ESP32**, use a voltage divider or level shifter on the **ECHO** pin because the ESP32 uses 3.3V GPIO logic.
 
 ---
 
@@ -91,31 +77,7 @@ When using an ESP32, reduce the HC-SR04 ECHO signal to 3.3V using a voltage divi
 
 ![Arduino IDE](../images/electronics-components/hc-sr04/Arduino%20IDE%20Code%20Screenshot.png)
 
-The sensor can be used with simple Arduino code and does not require any special library.
-
----
-
-# Distance Measurement Example
-
-![Distance Measurement](../images/electronics-components/hc-sr04/Distance%20Measurement%20Example.png)
-
-The Serial Monitor displays the measured distance in centimeters.
-
----
-
-# Real Hardware Setup
-
-![Hardware Setup](../images/electronics-components/hc-sr04/Real%20Hardware%20Setup.png)
-
-The HC-SR04 can easily be integrated with:
-
-- Arduino Uno
-- ESP32
-- Breadboard
-- LCD Display
-- Robot Chassis
-- Servo Motors
-- Buzzers
+The HC-SR04 can be programmed using the standard Arduino IDE with simple code and no additional libraries.
 
 ---
 
@@ -123,29 +85,29 @@ The HC-SR04 can easily be integrated with:
 
 ![Applications](../images/electronics-components/hc-sr04/Applications%20Infographic.png)
 
-Common applications include:
+Typical applications include:
 
-- Obstacle Avoidance Robot
-- Smart Dustbin
-- Water Level Monitoring
-- Parking Sensor
-- Smart Home Automation
-- Distance Meter
+- Obstacle Avoidance Robots
+- Smart Parking Systems
+- Automatic Dustbins
+- Water Tank Level Monitoring
+- Distance Measuring Devices
+- Home Automation
 - Robotics Projects
 
 ---
 
-# HC-SR04 Comparison
+# Comparison
 
 ![Comparison](../images/electronics-components/hc-sr04/Comparison%20Image.png)
 
-The HC-SR04 offers a longer measuring range and more accurate distance measurement than basic IR obstacle sensors, making it an excellent choice for robotics and automation projects.
+Compared to basic IR sensors, the HC-SR04 offers longer range, better distance measurement, and improved accuracy, making it an excellent choice for robotics and automation.
 
 ---
 
 # Recommended Products
 
-Build your project using genuine electronic components from **Chip.pk**.
+Build your project with genuine electronic components from **Chip.pk**.
 
 - HC-SR04 Ultrasonic Sensor
 - Arduino Uno R3
@@ -156,21 +118,16 @@ Build your project using genuine electronic components from **Chip.pk**.
 - L298N Motor Driver
 - Robot Car Chassis
 - 16×2 LCD with I2C
-- Resistor Kit
 
-Browse products:
-
-https://www.chip.pk/
+🌐 **Website:** https://www.chip.pk
 
 ---
 
-# Read the Complete Guide
+# Read the Complete Tutorial
 
-This GitHub article is a shortened version.
+For complete wiring diagrams, Arduino & ESP32 code, troubleshooting, FAQs, and detailed explanations, visit the Chip.pk Knowledge Hub.
 
-📖 Read the complete tutorial with wiring diagrams, Arduino code, ESP32 interfacing, troubleshooting, FAQs, and project ideas:
-
-https://www.chip.pk/blogs/chip-pk-knowledge-hub/
+👉 https://www.chip.pk/blogs/chip-pk-knowledge-hub
 
 ---
 
@@ -178,4 +135,4 @@ https://www.chip.pk/blogs/chip-pk-knowledge-hub/
 
 MIT License
 
-© Chip.pk Knowledge Hub
+**© Chip.pk Knowledge Hub**
