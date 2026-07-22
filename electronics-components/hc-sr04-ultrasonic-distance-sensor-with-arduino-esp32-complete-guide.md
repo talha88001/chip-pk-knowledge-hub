@@ -1,60 +1,47 @@
 # HC-SR04 Ultrasonic Distance Sensor with Arduino & ESP32 – Complete Guide
 
-The **HC-SR04 Ultrasonic Distance Sensor** is one of the most widely used distance-measuring modules for **Arduino**, **ESP32**, robotics, and IoT projects. It uses ultrasonic sound waves to accurately measure the distance between the sensor and an object, making it ideal for obstacle avoidance robots, parking systems, water-level monitoring, smart dustbins, and automation projects.
+The **HC-SR04 Ultrasonic Distance Sensor** is one of the most popular distance measurement modules used in Arduino, ESP32, robotics, and IoT projects. It measures the distance between the sensor and an object using ultrasonic sound waves, making it ideal for obstacle avoidance robots, smart parking systems, automatic dustbins, water level monitoring, and automation projects.
 
 ---
 
-# Hero Banner
+## What is HC-SR04?
 
-![Hero Banner](relay-module/images/hc-sr04/Hero%20Banner.png)
-
----
-
-# Features
-
-- Measuring Range: 2cm – 400cm
-- Operating Voltage: 5V
-- Operating Frequency: 40kHz
-- Accuracy: ±3mm
-- Easy Arduino & ESP32 Interface
-- Low Cost & Beginner Friendly
+The HC-SR04 is a low-cost ultrasonic distance sensor that uses a transmitter and receiver operating at **40kHz**. It sends ultrasonic pulses and measures the time taken for the echo to return, allowing accurate distance calculation.
 
 ---
 
-# HC-SR04 Front View
+## Key Features
 
-![HC-SR04 Front View](../images/electronics-components/hc-sr04/HC-SR04%20Front%20View.png)
-
-The HC-SR04 has four pins:
-
-- VCC
-- TRIG
-- ECHO
-- GND
-
-It measures distance by transmitting ultrasonic pulses and calculating the time required for the echo to return.
+- Measuring Range: **2cm to 400cm**
+- Operating Voltage: **5V DC**
+- Operating Frequency: **40kHz**
+- Accuracy: **±3mm**
+- Measuring Angle: **15°**
+- Fast and Reliable Distance Measurement
+- Compatible with Arduino, ESP32, STM32, Raspberry Pi, and other microcontrollers
 
 ---
 
-# Pinout Diagram
+## Pin Configuration
 
-![Pinout](../images/electronics-components/hc-sr04/HC-SR04%20Pinout%20Diagram.png)
+The HC-SR04 module has four pins:
 
-The **TRIG** pin sends the ultrasonic pulse, while the **ECHO** pin receives the reflected signal. The measured time is converted into distance.
-
----
-
-# Working Principle
-
-![Working Principle](../images/electronics-components/hc-sr04/How%20HC-SR04%20Works%20%28Working%20Principle%29.png)
-
-The controller sends a 10µs trigger pulse. The HC-SR04 emits a 40kHz ultrasonic wave and waits for the reflected echo. The travel time is then used to calculate the distance.
+- **VCC** – 5V Power Supply
+- **TRIG** – Trigger Input
+- **ECHO** – Echo Output
+- **GND** – Ground
 
 ---
 
-# Arduino Wiring
+## Working Principle
 
-![Arduino Wiring](../images/electronics-components/hc-sr04/HC-SR04%20Arduino%20Wiring%20Diagram.png)
+The microcontroller sends a **10µs trigger pulse** to the TRIG pin. The HC-SR04 then transmits an ultrasonic wave and waits for the reflected signal. The ECHO pin stays HIGH until the reflected wave returns. By measuring the travel time, the distance between the sensor and the object can be calculated.
+
+---
+
+## Arduino Interface
+
+Typical connections with Arduino Uno:
 
 | HC-SR04 | Arduino Uno |
 |----------|-------------|
@@ -63,53 +50,37 @@ The controller sends a 10µs trigger pulse. The HC-SR04 emits a 40kHz ultrasonic
 | TRIG | D9 |
 | ECHO | D10 |
 
----
-
-# ESP32 Wiring
-
-![ESP32 Wiring](../images/electronics-components/hc-sr04/HC-SR04%20ESP32%20Wiring%20Diagram.png)
-
-When connecting the HC-SR04 to an **ESP32**, use a voltage divider or level shifter on the **ECHO** pin because the ESP32 uses 3.3V GPIO logic.
+The module works directly with Arduino Uno without additional components.
 
 ---
 
-# Arduino IDE
+## ESP32 Interface
 
-![Arduino IDE](../images/electronics-components/hc-sr04/Arduino%20IDE%20Code%20Screenshot.png)
-
-The HC-SR04 can be programmed using the standard Arduino IDE with simple code and no additional libraries.
+The HC-SR04 also works with ESP32. Since the ESP32 uses **3.3V GPIO**, it is recommended to use a **voltage divider or logic level converter** on the ECHO pin to protect the ESP32 input.
 
 ---
 
-# Applications
-
-![Applications](../images/electronics-components/hc-sr04/Applications%20Infographic.png)
-
-Typical applications include:
+## Common Applications
 
 - Obstacle Avoidance Robots
 - Smart Parking Systems
-- Automatic Dustbins
 - Water Tank Level Monitoring
+- Automatic Dustbins
 - Distance Measuring Devices
-- Home Automation
-- Robotics Projects
+- Smart Home Automation
+- Robotics and STEM Projects
 
 ---
 
-# Comparison
+## Why Choose HC-SR04?
 
-![Comparison](../images/electronics-components/hc-sr04/Comparison%20Image.png)
-
-Compared to basic IR sensors, the HC-SR04 offers longer range, better distance measurement, and improved accuracy, making it an excellent choice for robotics and automation.
+The HC-SR04 offers excellent accuracy, a long measuring range, and simple interfacing at an affordable price. It is one of the best ultrasonic sensors for beginners, students, hobbyists, and professional embedded system developers.
 
 ---
 
-# Recommended Products
+## Recommended Products
 
-Build your project with genuine electronic components from **Chip.pk**.
-
-- HC-SR04 Ultrasonic Sensor
+- HC-SR04 Ultrasonic Distance Sensor
 - Arduino Uno R3
 - ESP32 Development Board
 - Breadboard
@@ -117,22 +88,22 @@ Build your project with genuine electronic components from **Chip.pk**.
 - SG90 Servo Motor
 - L298N Motor Driver
 - Robot Car Chassis
-- 16×2 LCD with I2C
+- 16×2 LCD Display with I2C Module
 
-🌐 **Website:** https://www.chip.pk
+Browse genuine electronic components at:
 
----
-
-# Read the Complete Tutorial
-
-For complete wiring diagrams, Arduino & ESP32 code, troubleshooting, FAQs, and detailed explanations, visit the Chip.pk Knowledge Hub.
-
-👉 https://www.chip.pk/blogs/chip-pk-knowledge-hub
+**🌐 https://www.chip.pk**
 
 ---
 
-## License
+## Learn More
 
-MIT License
+For detailed tutorials, wiring diagrams, Arduino & ESP32 code examples, troubleshooting tips, and project ideas, visit the **Chip.pk Knowledge Hub**.
 
-**© Chip.pk Knowledge Hub**
+**Website:** https://www.chip.pk
+
+---
+
+### About Chip.pk
+
+Chip.pk is Pakistan's trusted online electronics marketplace, offering genuine Arduino, ESP32, Raspberry Pi, STM32, robotics modules, sensors, displays, power supplies, development boards, and embedded system components for students, makers, engineers, and industries.
