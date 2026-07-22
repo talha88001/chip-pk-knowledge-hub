@@ -6,7 +6,7 @@ The **HC-SR04 Ultrasonic Distance Sensor** is one of the most widely used distan
 
 # Hero Banner
 
-![Hero Banner](../images/electronics-components/hc-sr04/Hero%20Banner.png)
+![Hero Banner](relay-module/images/hc-sr04/Hero%20Banner.png)
 
 ---
 
